@@ -1,32 +1,62 @@
 {
   "sites": [
     {
-      "key": "csp_AList",
-      "name": "AList影视",
+      "key": "movie1",
+      "name": "影视全集",
       "type": 3,
-      "api": "csp_AList",
+      "api": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 0
+      "filterable": 1
+    },
+    {
+      "key": "box1",
+      "name": "主影视源",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/liu673cn/box/main/m.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "jsonwax",
+      "name": "备用影视源",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/Yoursmile7/TVBox/main/XC.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     }
   ],
+
   "parses": [
     {
-      "name": "解析1",
+      "name": "解析 A",
       "type": 1,
       "url": "https://jx.jsonplayer.com/player/?url="
     },
     {
-      "name": "解析2",
+      "name": "解析 B",
       "type": 1,
       "url": "https://jx.aidouer.net/?url="
+    },
+    {
+      "name": "解析 C",
+      "type": 1,
+      "url": "https://api.xfsub.xyz/jiexi/?url="
     }
   ],
+
   "lives": [
     {
-      "name": "直播",
+      "name": "央视+卫视",
       "type": 0,
       "url": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/list.m3u"
+    },
+    {
+      "name": "国内高清直播",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/countries/cn.m3u"
     }
   ]
 }
