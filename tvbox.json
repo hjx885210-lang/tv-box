@@ -1,8 +1,8 @@
 {
   "sites": [
     {
-      "key": "movie1",
-      "name": "影视全集",
+      "key": "main_config",
+      "name": "主影视接口",
       "type": 3,
       "api": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json",
       "searchable": 1,
@@ -10,8 +10,8 @@
       "filterable": 1
     },
     {
-      "key": "box1",
-      "name": "主影视源",
+      "key": "box_source",
+      "name": "Box影视源",
       "type": 3,
       "api": "https://raw.githubusercontent.com/liu673cn/box/main/m.json",
       "searchable": 1,
@@ -19,10 +19,37 @@
       "filterable": 1
     },
     {
-      "key": "jsonwax",
-      "name": "备用影视源",
+      "key": "xc_source",
+      "name": "XC影视源",
       "type": 3,
       "api": "https://raw.githubusercontent.com/Yoursmile7/TVBox/main/XC.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "broker_tvbox",
+      "name": "影视合集B1",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/TVBROKER/TVBoxJson/main/config.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "qiumi_catvod",
+      "name": "影视合集B2",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/qiumiaozhongyu/CatVodJson/main/tv.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "backup_58bx",
+      "name": "备用影视源",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/58bx/TVBox-json/main/json.json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -44,19 +71,44 @@
       "name": "解析 C",
       "type": 1,
       "url": "https://api.xfsub.xyz/jiexi/?url="
+    },
+    {
+      "name": "解析 D",
+      "type": 1,
+      "url": "https://api.jx.123ku.com/?url="
     }
   ],
 
   "lives": [
     {
-      "name": "央视+卫视",
-      "type": 0,
-      "url": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/list.m3u"
-    },
-    {
-      "name": "国内高清直播",
+      "name": "央视+卫视合集",
       "type": 0,
       "url": "https://iptv-org.github.io/iptv/countries/cn.m3u"
+    },
+    {
+      "name": "全球直播合集",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/index.m3u"
+    },
+    {
+      "name": "娱乐频道合集",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/genres/entertainment.m3u"
+    },
+    {
+      "name": "深夜精选频道",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/genres/lifestyle.m3u"
+    },
+    {
+      "name": "电影频道合集",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/genres/movies.m3u"
+    },
+    {
+      "name": "亚洲热门频道",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/regions/asia.m3u"
     }
   ]
 }
